@@ -17,7 +17,7 @@ public class HomeController {
 	@GET  
 	public void index(HttpServletRequest request, HttpServletResponse response) {  
 		try {  
-			response.getWriter().println("<h1>Index method is called</h1>");   
+			response.getWriter().println("Index method is called");   
 		} catch (IOException e) {  
 			// TODO Auto-generated catch block  
 			e.printStackTrace();  
