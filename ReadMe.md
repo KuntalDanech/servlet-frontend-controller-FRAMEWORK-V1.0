@@ -7,7 +7,6 @@ It is light weight module, don't require to add any plugins and don't require to
 Purpose of these small framework is to seperate out request's dispatch process in controller as it is difficult in only servlet and if we dont want to use spring or other heavy weighted framework in small projects then we can make use of it or else we can make our own framework as per the requirement of project.  
   
 Steps to start making controller.  
----------------------------------  
 1. Import the given project.  
 2.Under controller package make top level class using @CONTROLLER annotations and method name will be considered as a request name.  
   
@@ -27,7 +26,7 @@ public class HomeController {
 	@DELETE  
 	public void deleteRequest(HttpServletRequest request, HttpServletResponse response) {  
 		try {  
-			response.getWriter().println("<h1>Index method is called</h1>");  
+			response.getWriter().println("Index method is called");  
 		} catch (IOException e) {  
 			// TODO Auto-generated catch block  
 			e.printStackTrace();  
